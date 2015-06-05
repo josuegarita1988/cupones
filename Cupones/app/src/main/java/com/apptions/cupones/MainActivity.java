@@ -1,9 +1,11 @@
 package com.apptions.cupones;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -19,6 +21,13 @@ public class MainActivity extends ActionBarActivity {
         // otro patito
     }
 
+
+    public void clickNew (View view){
+
+        Intent n = new Intent(getApplicationContext(),InicioSesion.class);
+        startActivity(n);
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
